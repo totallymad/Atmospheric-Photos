@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Atmospheric photos</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                Atmospheric <span class="accent">Photos</span>
+            </div>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html#hero">Главная</a></li>
+                    <li><a href="index.html#portfolio">Портфолио</a></li>
+                    <li><a href="index.html#about">Обо мне</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="index.html#contact">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html" class="back-to-main">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Главная</span>
+                </a>
+                <div class="breadcrumb-path">
+                    <a href="index.html">Главная</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Галерея</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero">
+        <h1>Портфолио</h1>
+        <p>Коллекции фотографий, объединенные общей идеей и настроением</p>
+    </section>
+
+    <!-- Portfolio Container -->
+    <section class="portfolio-container">
+        <!-- Instagram-style photosets feed -->
+        <div class="photosets-feed">
+            <article class="photoset-preview" data-photoset="Lisa-Studio">
+                <div class="photoset-cover">
+                    <img src="img/photosets/Lisa - Studio/Lisa_preview.jpg" alt="Лиза в студии">
+                    <div class="photoset-overlay">
+                        <h2 class="photoset-title">История в каждом кадре</h2>
+                    </div>
+                </div>
+                <div class="photoset-info">
+                    <h3>Фотосессия в студии с Лизой</h3>
+                    <p>Атмосферные кадры, где Лиза раскрывает свою индивидуальность и красоту в уютной студийной
+                        обстановке.
+                        Каждая фотография наполнена теплом и гармонией.</p>
+                    <div class="photoset-meta">
+                        <span><i class="fas fa-images"></i> 15 фотографий</span>
+                        <span><i class="fas fa-calendar"></i> Август 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Вологда</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="photoset-preview" data-photoset="birthday-party">
+                <div class="photoset-cover">
+                    <img src="img/photosets/Alena/alena-preview.jpg" alt="День рождения Алены">
+                    <div class="photoset-overlay">
+                        <h2 class="photoset-title">Праздничные мгновения</h2>
+                    </div>
+                </div>
+                <div class="photoset-info">
+                    <h3>День рождения Алены</h3>
+                    <p>Яркая фотосессия с теплыми эмоциями, смехом и искренними улыбками. Каждый кадр передает атмосферу
+                        праздника и радости этого особенного дня.</p>
+                    <div class="photoset-meta">
+                        <span><i class="fas fa-images"></i> 8 фотографий</span>
+                        <span><i class="fas fa-calendar"></i> Август 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Вологда</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="photoset-preview" data-photoset="ilyana-city">
+                <div class="photoset-cover">
+                    <img src="img/photosets/Ilyana/ilyana-preview.jpg"
+                        alt="Городская фотосессия с Иляной">
+                    <div class="photoset-overlay">
+                        <h2 class="photoset-title">Иляна в ритме города</h2>
+                    </div>
+                </div>
+                <div class="photoset-info">
+                    <h3>Городская фотосессия</h3>
+                    <p>Современные улицы и архитектура становятся фоном для стильных кадров с Иляной.
+                        Каждое фото передает атмосферу динамичного города и её неповторимый образ.</p>
+                    <div class="photoset-meta">
+                        <span><i class="fas fa-images"></i> 9 фотографий</span>
+                        <span><i class="fas fa-calendar"></i> Августа 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Вологда</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2025 Atmospheric Photos. Все права защищены.</p>
+
+
+            <!-- Кнопка возврата наверх -->
+            <button id="scroll-to-top" class="scroll-to-top" title="Наверх">
+                <span class="arrow-up">↑</span>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Page transition overlay -->
+    <div class="page-transition" id="pageTransition"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Animate photosets on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, index * 200);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.photoset-preview').forEach(item => {
+                observer.observe(item);
+            });
+
+            // Handle photoset clicks with smooth transition
+            const pageTransition = document.getElementById('pageTransition');
+
+            document.querySelectorAll('.photoset-preview').forEach(preview => {
+                preview.addEventListener('click', function () {
+                    const photosetId = this.getAttribute('data-photoset');
+
+                    // Show transition overlay
+                    pageTransition.classList.add('active');
+
+                    // Navigate to photoset page after transition
+                    setTimeout(() => {
+                        window.location.href = `photoset-${photosetId}.html`;
+                    }, 300);
+                });
+            });
+
+            // Enhanced hover effects
+            document.querySelectorAll('.photoset-preview').forEach(preview => {
+                preview.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-8px) scale(1.01)';
+                });
+
+                preview.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+
+    <!-- Navigation functionality -->
+    <script src="navigation.js"></script>
+</body>
+
+</html>

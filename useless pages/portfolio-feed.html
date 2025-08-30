@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Nastya Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                Atmospheric <span class="accent">Photos</span>
+            </div>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html#hero">Главная</a></li>
+                    <li><a href="index.html#portfolio">Портфолио</a></li>
+                    <li><a href="index.html#about">Обо мне</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="index.html#contact">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero">
+        <h1>Портфолио</h1>
+        <p>Коллекции фотографий, объединенные общей идеей и настроением</p>
+    </section>
+
+    <!-- Portfolio Container -->
+    <section class="portfolio-container">
+        <!-- Instagram-style photosets feed -->
+        <div class="photosets-feed">
+            <!-- Photoset 1: Wedding -->
+            <article class="photoset-preview" data-photoset="wedding-moments">
+                <div class="photoset-cover">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=500&fit=crop" alt="Свадебные моменты">
+                    <div class="photoset-overlay">
+                        <h2 class="photoset-title">Незабываемые моменты</h2>
+                    </div>
+                </div>
+                <div class="photoset-info">
+                    <h3>Свадебная фотосессия</h3>
+                    <p>Трогательные мгновения самого важного дня в жизни пары. Каждый кадр наполнен искренними эмоциями и нежностью.</p>
+                    <div class="photoset-meta">
+                        <span><i class="fas fa-images"></i> 24 фотографии</span>
+                        <span><i class="fas fa-calendar"></i> Март 2024</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Москва</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Photoset 2: Urban Life -->
+            <article class="photoset-preview" data-photoset="urban-life">
+                <div class="photoset-cover">
+                    <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800&h=500&fit=crop" alt="Городская жизнь">
+                    <div class="photoset-overlay">
+                        <h2 class="photoset-title">Ритм города</h2>
+                    </div>
+                </div>
+                <div class="photoset-info">
+                    <h3>Городская фотография</h3>
+                    <p>Динамичная жизнь мегаполиса через объектив. Архитектура, люди, движение — все, что делает город живым.</p>
+                    <div class="photoset-meta">
+                        <span><i class="fas fa-images"></i> 18 фотографий</span>
+                        <span><i class="fas fa-calendar"></i> Февраль 2024</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Санкт-Петербург</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Photoset 3: Nature Beauty -->
+            <article class="photoset-preview" data-photoset="nature-beauty">
+                <div class="photoset-cover">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop" alt="Красота природы">
+                    <div class="photoset-overlay">
+                        <h2 class="photoset-title">Красота природы</h2>
+                    </div>
+                </div>
+                <div class="photoset-info">
+                    <h3>Пейзажная фотография</h3>
+                    <p>Величественные горы, спокойные озера и бескрайние леса. Природа во всем своем великолепии.</p>
+                    <div class="photoset-meta">
+                        <span><i class="fas fa-images"></i> 32 фотографии</span>
+                        <span><i class="fas fa-calendar"></i> Январь 2024</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Алтай</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Photoset 4: Portrait Sessions -->
+            <article class="photoset-preview" data-photoset="portrait-sessions">
+                <div class="photoset-cover">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=500&fit=crop&crop=face" alt="Портретные сессии">
+                    <div class="photoset-overlay">
+                        <h2 class="photoset-title">Душа в кадре</h2>
+                    </div>
+                </div>
+                <div class="photoset-info">
+                    <h3>Портретная фотография</h3>
+                    <p>Индивидуальные портретные сессии, раскрывающие характер и внутренний мир каждого человека.</p>
+                    <div class="photoset-meta">
+                        <span><i class="fas fa-images"></i> 28 фотографий</span>
+                        <span><i class="fas fa-calendar"></i> Декабрь 2023</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Москва</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Photoset 5: Fashion Editorial -->
+            <article class="photoset-preview" data-photoset="fashion-editorial">
+                <div class="photoset-cover">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0d2a0852d30?w=800&h=500&fit=crop" alt="Fashion съемка">
+                    <div class="photoset-overlay">
+                        <h2 class="photoset-title">Мода и стиль</h2>
+                    </div>
+                </div>
+                <div class="photoset-info">
+                    <h3>Fashion фотография</h3>
+                    <p>Стильные образы и модные тенденции. Игра света, теней и высокой моды в каждом кадре.</p>
+                    <div class="photoset-meta">
+                        <span><i class="fas fa-images"></i> 20 фотографий</span>
+                        <span><i class="fas fa-calendar"></i> Ноябрь 2023</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Студия</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Photoset 6: Family Stories -->
+            <article class="photoset-preview" data-photoset="family-stories">
+                <div class="photoset-cover">
+                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714efa933?w=800&h=500&fit=crop" alt="Семейные истории">
+                    <div class="photoset-overlay">
+                        <h2 class="photoset-title">Семейные истории</h2>
+                    </div>
+                </div>
+                <div class="photoset-info">
+                    <h3>Семейная фотография</h3>
+                    <p>Теплые моменты семейного счастья. Искренние улыбки, объятия и радость быть вместе.</p>
+                    <div class="photoset-meta">
+                        <span><i class="fas fa-images"></i> 35 фотографий</span>
+                        <span><i class="fas fa-calendar"></i> Октябрь 2023</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Парк</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Page transition overlay -->
+    <div class="page-transition" id="pageTransition"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate photosets on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, index * 200);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.photoset-preview').forEach(item => {
+                observer.observe(item);
+            });
+
+            // Handle photoset clicks with smooth transition
+            const pageTransition = document.getElementById('pageTransition');
+            
+            document.querySelectorAll('.photoset-preview').forEach(preview => {
+                preview.addEventListener('click', function() {
+                    const photosetId = this.getAttribute('data-photoset');
+                    
+                    // Show transition overlay
+                    pageTransition.classList.add('active');
+                    
+                    // Navigate to photoset page after transition
+                    setTimeout(() => {
+                        window.location.href = `photoset-${photosetId}.html`;
+                    }, 300);
+                });
+            });
+
+            // Enhanced hover effects
+            document.querySelectorAll('.photoset-preview').forEach(preview => {
+                preview.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.01)';
+                });
+                
+                preview.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+    
+    <!-- Navigation functionality -->
+    <script src="navigation.js"></script>
+</body>
+</html>

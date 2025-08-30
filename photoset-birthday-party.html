@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmospheric photos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="photoset.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                Atmospheric <span class="accent">Photos</span>
+            </div>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html#hero">Главная</a></li>
+                    <li><a href="index.html#portfolio">Портфолио</a></li>
+                    <li><a href="index.html#about">Обо мне</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="index.html#contact">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html" class="back-to-main">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Главная</span>
+                </a>
+                <div class="breadcrumb-path">
+                    <a href="index.html">Главная</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="gallery.html">Портфолио</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Незабываемые моменты</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photoset Hero Section -->
+    <section class="photoset-hero page-enter">
+        <h1>Праздничные мгновения</h1>
+        <p>Яркая фотосессия с теплыми эмоциями, смехом и искренними улыбками. Каждый кадр передает атмосферу праздника и радости этого особенного дня.
+        </p>
+        <div class="photoset-meta">
+            <span><i class="fas fa-images"></i> 8 фотографий</span>
+            <span><i class="fas fa-calendar"></i> Август 2025</span>
+            <span><i class="fas fa-map-marker-alt"></i> Вологда</span>
+        </div>
+    </section>
+
+    <!-- Photoset Container -->
+    <section class="photoset-container">
+        <!-- Masonry Gallery Grid -->
+        <div class="photoset-grid">
+            <!-- Wedding photos with different sizes -->
+            <div class="photo-item">
+                <img src="img/photosets/Alena/1.jpg" alt="Алена 1">
+                <div class="photo-overlay">
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+            </div>
+
+            <div class="photo-item">
+                <img src="img/photosets/Alena/2.jpg" alt="Алена 2">
+                <div class="photo-overlay">
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+            </div>
+
+            <div class="photo-item">
+                <img src="img/photosets/Alena/3.jpg" alt="Алена 3">
+                <div class="photo-overlay">
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+            </div>
+
+            <div class="photo-item">
+                <img src="img/photosets/Alena/4.jpg" alt="Алена 4">
+                <div class="photo-overlay">
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+            </div>
+
+            <div class="photo-item">
+                <img src="img/photosets/Alena/5.jpg" alt="Алена 5">
+                <div class="photo-overlay">
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+            </div>
+
+            <div class="photo-item">
+                <img src="img/photosets/Alena/6.jpg" alt="Алена 6">
+                <div class="photo-overlay">
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+            </div>
+
+            <div class="photo-item">
+                <img src="img/photosets/Alena/7.jpg" alt="Алена 7">
+                <div class="photo-overlay">
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+            </div>
+
+            <div class="photo-item">
+                <img src="img/photosets/Alena/8.jpg" alt="Алена 8">
+                <div class="photo-overlay">
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+            </div>
+
+          
+
+
+        </div>
+    </section>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-counter" id="lightbox-counter">
+                1 / 16
+            </div>
+        </div>
+    </div>
+
+        <footer class="footer">
+        <div class="footer-container">
+            <p>© 2025 Atmospheric Photos. Все права защищены.</p>
+
+            <!-- Scroll to top button -->
+            <button id="scroll-to-top" class="scroll-to-top" title="Наверх">
+                <span class="arrow-up">↑</span>
+            </button>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Animate photos on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, index * 100);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.photo-item').forEach(item => {
+                observer.observe(item);
+            });
+
+            // Lightbox functionality
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCounter = document.getElementById('lightbox-counter');
+            const lightboxClose = document.getElementById('lightbox-close');
+            const lightboxPrev = document.getElementById('lightbox-prev');
+            const lightboxNext = document.getElementById('lightbox-next');
+
+            const photoItems = document.querySelectorAll('.photo-item');
+            let currentImageIndex = 0;
+
+            function openLightbox(index) {
+                currentImageIndex = index;
+                const item = photoItems[currentImageIndex];
+                const img = item.querySelector('img');
+
+                lightboxImg.src = img.src;
+                lightboxCounter.textContent = `${currentImageIndex + 1} / ${photoItems.length}`;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+
+            function showPrevImage() {
+                currentImageIndex = (currentImageIndex - 1 + photoItems.length) % photoItems.length;
+                openLightbox(currentImageIndex);
+            }
+
+            function showNextImage() {
+                currentImageIndex = (currentImageIndex + 1) % photoItems.length;
+                openLightbox(currentImageIndex);
+            }
+
+            // Event listeners
+            photoItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    openLightbox(index);
+                });
+            });
+
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightboxPrev.addEventListener('click', showPrevImage);
+            lightboxNext.addEventListener('click', showNextImage);
+
+            // Close lightbox on background click
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function (e) {
+                if (lightbox.classList.contains('active')) {
+                    if (e.key === 'Escape') {
+                        closeLightbox();
+                    } else if (e.key === 'ArrowLeft') {
+                        showPrevImage();
+                    } else if (e.key === 'ArrowRight') {
+                        showNextImage();
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- Navigation functionality -->
+    <script src="navigation.js"></script>
+</body>
+
+</html>
