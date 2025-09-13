@@ -1,0 +1,18 @@
+# Разрешаем всем поисковикам сканировать сайт
+User-agent: *
+Disallow: /useless-pages/      # запрещаем бесполезные страницы
+
+# Статические ресурсы (CSS, JS, изображения) оставляем открытыми
+Allow: /img/
+Allow: /favicon/
+Allow: *.css
+Allow: *.js
+
+# Если хочешь явно разрешить главные страницы (по желанию)
+Allow: /index.html
+Allow: /gallery.html
+Allow: /photoset-*.html
+Allow: /privacy-policy.html
+
+# Карта сайта
+Sitemap: https://atmosphericphotos.netlify.app/sitemap.xml
