@@ -171,7 +171,7 @@
     <!-- Page transition overlay -->
     <div class="page-transition" id="pageTransition"></div>
 
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Animate photosets on scroll
             const observerOptions = {
@@ -221,7 +221,75 @@
                 });
             });
         });
+    </script> -->
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Handle page transition overlay for browser navigation
+            const pageTransition = document.getElementById('pageTransition');
+            
+            // Ensure transition overlay is hidden when page loads
+            pageTransition.classList.remove('active');
+            
+            // Handle browser back/forward navigation
+            window.addEventListener('pageshow', function(event) {
+                // Remove transition overlay when page is shown (including back navigation)
+                pageTransition.classList.remove('active');
+            });
+            
+            // Handle popstate (back/forward buttons)
+            window.addEventListener('popstate', function(event) {
+                pageTransition.classList.remove('active');
+            });
+            
+            // Animate photosets on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, index * 200);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.photoset-preview').forEach(item => {
+                observer.observe(item);
+            });
+
+            // Handle photoset clicks with smooth transition
+            document.querySelectorAll('.photoset-preview').forEach(preview => {
+                preview.addEventListener('click', function () {
+                    const photosetId = this.getAttribute('data-photoset');
+
+                    // Show transition overlay
+                    pageTransition.classList.add('active');
+
+                    // Navigate to photoset page after transition
+                    setTimeout(() => {
+                        window.location.href = `photoset-${photosetId}.html`;
+                    }, 300);
+                });
+            });
+
+            // Enhanced hover effects
+            document.querySelectorAll('.photoset-preview').forEach(preview => {
+                preview.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-8px) scale(1.01)';
+                });
+
+                preview.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
     </script>
+<!-- ... existing code ... -->
 
     <!-- Navigation functionality -->
     <script src="navigation.js"></script>
